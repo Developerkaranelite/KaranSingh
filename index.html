@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern personal portfolio website">
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home"><span id="brandName">MyName</span><b>.</b></a>
+    <nav id="mainNav">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a id="githubTop" class="social-icon" href="#" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+      <a id="linkedinTop" class="social-icon" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a id="instagramTop" class="social-icon" href="#" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">☾</button>
+      <button id="editOpen" class="edit-btn">✦ Edit Profile</button>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Available for new opportunities</p>
+        <h1>Hi, I'm <strong id="heroName">My Name</strong></h1>
+        <h2 id="heroRole">Frontend Developer</h2>
+        <p id="heroBio" class="hero-text">I create beautiful, functional and user-centered digital experiences. I turn ideas into clean, modern websites with thoughtful design.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#contact">Hire Me <span>↗</span></a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+        <div class="mini-socials">
+          <a id="instagramHero" href="#" target="_blank" rel="noopener">◎ <span id="instagramHandle">@username</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="avatar-wrap">
+          <img id="profileImage" src="karan.jpeg" alt="Profile photo">
+        </div>
+        <div class="tech-bubble bubble-1">JS</div>
+        <div class="tech-bubble bubble-2">&lt;/&gt;</div>
+        <div class="tech-bubble bubble-3">UI</div>
+        <div class="tech-bubble bubble-4">CSS</div>
+        <div class="tech-bubble bubble-5">✦</div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <span class="section-kicker">01 — ABOUT</span>
+        <h2>About <span>Me</span></h2>
+        <p>A quick introduction and the skills I bring to every project.</p>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card about-card reveal">
+          <h3 id="aboutTitle">I build things for the web.</h3>
+          <p id="aboutText">I'm a passionate developer focused on creating fast, accessible and visually polished digital experiences. I enjoy learning new technologies and turning creative ideas into real products.</p>
+          <div class="stats">
+            <div><b id="experience">2+</b><span>Years Experience</span></div>
+            <div><b id="projectsCount">10+</b><span>Projects</span></div>
+            <div><b id="clientsCount">5+</b><span>Happy Clients</span></div>
+          </div>
+        </div>
+        <div class="skills-card reveal">
+          <div class="skill"><div><span>HTML / CSS</span><b>95%</b></div><i><em style="width:95%"></em></i></div>
+          <div class="skill"><div><span>JavaScript</span><b>88%</b></div><i><em style="width:88%"></em></i></div>
+          <div class="skill"><div><span>UI / UX</span><b>82%</b></div><i><em style="width:82%"></em></i></div>
+          <div class="skill"><div><span>Responsive Design</span><b>92%</b></div><i><em style="width:92%"></em></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <span class="section-kicker">02 — WORK</span>
+        <h2>Featured <span>Projects</span></h2>
+        <p>Some selected work. You can edit, add or remove projects from the profile editor.</p>
+      </div>
+      <div id="projectsGrid" class="projects-grid"></div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading reveal">
+        <span class="section-kicker">03 — CONTACT</span>
+        <h2>Let's <span>Connect</span></h2>
+        <p>Have an idea? Send a message and let's build something great.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p id="contactIntro">I'm always open to discussing exciting projects, collaborations and new opportunities.</p>
+          <a id="emailLink" href="mailto:hello@example.com">✉ <span>hello@example.com</span></a>
+          <a id="phoneLink" href="tel:+910000000000">☎ <span>+91 00000 00000</span></a>
+          <p>⌖ <span id="locationText">India</span></p>
+          <div class="contact-socials">
+            <a id="githubContact" href="#" target="_blank" rel="noopener">GH</a>
+            <a id="linkedinContact" href="#" target="_blank" rel="noopener">in</a>
+            <a id="instagramContact" href="#" target="_blank" rel="noopener">◎</a>
+          </div>
+        </div>
+        <form id="contactForm" class="glass-card contact-form reveal">
+          <input id="senderName" type="text" placeholder="Your Name" required>
+          <input id="senderEmail" type="email" placeholder="Your Email" required>
+          <textarea id="senderMessage" placeholder="Your Message" rows="6" required></textarea>
+          <button class="btn primary" type="submit">Send Message <span>↗</span></button>
+          <small id="formStatus"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span id="footerName">MyName</span><b>.</b></div>
+    <p>© <span id="year"></span> <span id="footerName2">MyName</span>. All rights reserved.</p>
+    <button id="editOpenFooter" class="footer-edit">Edit website</button>
+  </footer>
+
+  <div id="editorOverlay" class="modal-overlay">
+    <aside class="editor-panel">
+      <div class="editor-head">
+        <div><span class="section-kicker">WEBSITE EDITOR</span><h2>Customize your site</h2></div>
+        <button id="editorClose" class="close-btn">×</button>
+      </div>
+
+      <div class="editor-tabs">
+        <button class="tab active" data-tab="profileTab">Profile</button>
+        <button class="tab" data-tab="projectsTab">Projects</button>
+        <button class="tab" data-tab="socialTab">Social</button>
+      </div>
+
+      <div id="profileTab" class="tab-content active">
+        <label>Profile / DP image
+          <div class="upload-box">
+            <img id="editorPreview" src="assets/default-avatar.svg" alt="Preview">
+            <div><input id="imageUpload" type="file" accept="image/*"><small>Choose your own JPG, PNG or WEBP image.</small></div>
+          </div>
+        </label>
+        <div class="two-col">
+          <label>Your Name<input id="editName" type="text"></label>
+          <label>Professional Role<input id="editRole" type="text"></label>
+        </div>
+        <label>Hero Description<textarea id="editBio" rows="3"></textarea></label>
+        <label>About Heading<input id="editAboutTitle" type="text"></label>
+        <label>About Details<textarea id="editAboutText" rows="4"></textarea></label>
+        <div class="three-col">
+          <label>Experience<input id="editExperience" type="text"></label>
+          <label>Projects<input id="editProjectsCount" type="text"></label>
+          <label>Clients<input id="editClientsCount" type="text"></label>
+        </div>
+        <div class="two-col">
+          <label>Email<input id="editEmail" type="email"></label>
+          <label>Phone<input id="editPhone" type="text"></label>
+        </div>
+        <label>Location<input id="editLocation" type="text"></label>
+        <label>Instagram username<input id="editInstagramHandle" type="text" placeholder="@username"></label>
+      </div>
+
+      <div id="projectsTab" class="tab-content">
+        <div id="projectEditorList"></div>
+        <button id="addProject" class="btn ghost full">+ Add Project</button>
+      </div>
+
+      <div id="socialTab" class="tab-content">
+        <label>GitHub URL<input id="editGithub" type="url" placeholder="https://github.com/username"></label>
+        <label>LinkedIn URL<input id="editLinkedin" type="url" placeholder="https://linkedin.com/in/username"></label>
+        <label>Instagram URL<input id="editInstagram" type="url" placeholder="https://instagram.com/username"></label>
+        <div class="theme-box">
+          <div><b>Theme</b><small>Switch between dark and light appearance.</small></div>
+          <button id="editorThemeToggle" class="theme-switch">Dark / Light</button>
+        </div>
+      </div>
+
+      <div class="editor-actions">
+        <button id="resetData" class="btn danger">Reset</button>
+        <button id="saveData" class="btn primary">Save Changes</button>
+      </div>
+      <p class="save-note">Your edits are saved in this browser using localStorage. No server is required.</p>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
